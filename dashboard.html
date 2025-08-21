@@ -521,6 +521,83 @@
             
             
             
+            <h2 class="section-title">🎁 Ofertas Complementares</h2>
+            <div class="offers-grid">
+                
+      <div class="offer-card">
+        <div class="offer-cover" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);">
+          <div class="offer-icon">🔒</div>
+          <div class="offer-lock-badge">BLOQUEADO</div>
+        </div>
+        <div class="offer-info">
+          <h3 class="offer-title">🎁 Bolo Chocolate</h3>
+          <div class="offer-stats">
+            <span class="stat">🎥 2</span>
+            
+            <span class="stat">💰 Conteúdo Exclusivo</span>
+          </div>
+          <div class="offer-price-display">💰 R$ 37,00</div>
+          <button class="offer-buy-btn" onclick="buyOffer('Bolo-Chocolate', 'Bolo Chocolate', 37)">
+            🛒 Aproveitar essa Oferta
+          </button>
+        </div>
+      </div>
+      <div class="offer-card">
+        <div class="offer-cover" style="background: linear-gradient(135deg, #feca57 0%, #ff9ff3 100%);">
+          <div class="offer-icon">🔒</div>
+          <div class="offer-lock-badge">BLOQUEADO</div>
+        </div>
+        <div class="offer-info">
+          <h3 class="offer-title">🎁 Bolo Maracuja</h3>
+          <div class="offer-stats">
+            <span class="stat">🎥 2</span>
+            
+            <span class="stat">💰 Conteúdo Exclusivo</span>
+          </div>
+          <div class="offer-price-display">💰 R$ 37,00</div>
+          <button class="offer-buy-btn" onclick="buyOffer('Bolo-Maracuja', 'Bolo Maracuja', 37)">
+            🛒 Aproveitar essa Oferta
+          </button>
+        </div>
+      </div>
+      <div class="offer-card">
+        <div class="offer-cover" style="background: linear-gradient(135deg, #48dbfb 0%, #0abde3 100%);">
+          <div class="offer-icon">🔒</div>
+          <div class="offer-lock-badge">BLOQUEADO</div>
+        </div>
+        <div class="offer-info">
+          <h3 class="offer-title">🎁 Pudim</h3>
+          <div class="offer-stats">
+            <span class="stat">🎥 2</span>
+            
+            <span class="stat">💰 Conteúdo Exclusivo</span>
+          </div>
+          <div class="offer-price-display">💰 R$ 37,00</div>
+          <button class="offer-buy-btn" onclick="buyOffer('Pudim', 'Pudim', 37)">
+            🛒 Aproveitar essa Oferta
+          </button>
+        </div>
+      </div>
+      <div class="offer-card">
+        <div class="offer-cover" style="background: linear-gradient(135deg, #1dd1a1 0%, #10ac84 100%);">
+          <div class="offer-icon">🔒</div>
+          <div class="offer-lock-badge">BLOQUEADO</div>
+        </div>
+        <div class="offer-info">
+          <h3 class="offer-title">🎁 UPSELL 1</h3>
+          <div class="offer-stats">
+            <span class="stat">🎥 2</span>
+            
+            <span class="stat">💰 Conteúdo Exclusivo</span>
+          </div>
+          <div class="offer-price-display">💰 R$ 37,00</div>
+          <button class="offer-buy-btn" onclick="buyOffer('UPSELL-1', 'UPSELL 1', 37)">
+            🛒 Aproveitar essa Oferta
+          </button>
+        </div>
+      </div>
+            </div>
+            
             
             <div class="support-section">
                 <h3 class="support-title">💬 Suporte</h3>
@@ -1554,7 +1631,7 @@ console.log('✅ Sistema de Validações da Área de Membros carregado com suces
         }
         
         // Dados dos módulos para navegação (incluir ofertas)
-        const moduleData = Object.assign({"UPSELL-2":[{"name":"3.mp4","path":"UPSELL-2/3.mp4","type":"video"},{"name":"4.mp4","path":"UPSELL-2/4.mp4","type":"video"}]}, {});
+        const moduleData = Object.assign({"UPSELL-2":[{"name":"3.mp4","path":"UPSELL-2/3.mp4","type":"video"},{"name":"4.mp4","path":"UPSELL-2/4.mp4","type":"video"}]}, {"Bolo-Chocolate":[{"name":"3.mp4","path":"ofertas/Bolo-Chocolate/3.mp4","type":"video"},{"name":"4.mp4","path":"ofertas/Bolo-Chocolate/4.mp4","type":"video"}],"Bolo-Maracuja":[{"name":"1.mp4","path":"ofertas/Bolo-Maracuja/1.mp4","type":"video"},{"name":"2.mp4","path":"ofertas/Bolo-Maracuja/2.mp4","type":"video"}],"Pudim":[{"name":"5.mp4","path":"ofertas/Pudim/5.mp4","type":"video"},{"name":"6.mp4","path":"ofertas/Pudim/6.mp4","type":"video"}],"UPSELL-1":[{"name":"1.mp4","path":"ofertas/UPSELL-1/1.mp4","type":"video"},{"name":"2.mp4","path":"ofertas/UPSELL-1/2.mp4","type":"video"}]});
         const extraData = [];
         
         function openModule(moduleName) {
