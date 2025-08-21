@@ -2,10 +2,11 @@
   "email": "felipedom10m@gmail.com",
   "produto": "teste-13",
   "upsells_comprados": [
-    1
+    1,
+    "UPSELL-1"
   ],
-  "data": "2025-08-21T14:37:30.332Z",
-  "transacao_id": "checkout_109382",
+  "data": "2025-08-21T14:45:34.121Z",
+  "transacao_id": "test-card-1755787534121",
   "acesso_liberado": true,
   "nome": "Sousa Felipe",
   "cpf": "19100000000",
