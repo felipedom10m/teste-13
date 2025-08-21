@@ -503,84 +503,19 @@
             
             <div class="content-grid">
                 
+    <div class="module-card" onclick="openModule('UPSELL-2')">
+      <div class="module-cover" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="module-icon">📖</div>
+      </div>
+      <div class="module-info">
+        <h3 class="module-title">UPSELL 2</h3>
+        <div class="module-stats">
+          <span class="stat">🎥 2</span>
+          
+        </div>
+      </div>
+    </div>
                 
-    <div class="module-card" onclick="openFile('README.md')">
-      <div class="module-cover" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-        <div class="module-icon">📄</div>
-      </div>
-      <div class="module-info">
-        <h3 class="module-title">🎁 README.md</h3>
-        <div class="module-stats">
-          <span class="stat">📄 Arquivo</span>
-        </div>
-      </div>
-    </div>
-    <div class="module-card" onclick="openFile('arquivos')">
-      <div class="module-cover" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-        <div class="module-icon">📄</div>
-      </div>
-      <div class="module-info">
-        <h3 class="module-title">🎁 arquivos</h3>
-        <div class="module-stats">
-          <span class="stat">📄 Arquivo</span>
-        </div>
-      </div>
-    </div>
-    <div class="module-card" onclick="openFile('clientes.json')">
-      <div class="module-cover" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-        <div class="module-icon">📄</div>
-      </div>
-      <div class="module-info">
-        <h3 class="module-title">🎁 clientes.json</h3>
-        <div class="module-stats">
-          <span class="stat">📄 Arquivo</span>
-        </div>
-      </div>
-    </div>
-    <div class="module-card" onclick="openFile('customers')">
-      <div class="module-cover" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-        <div class="module-icon">📄</div>
-      </div>
-      <div class="module-info">
-        <h3 class="module-title">🎁 customers</h3>
-        <div class="module-stats">
-          <span class="stat">📄 Arquivo</span>
-        </div>
-      </div>
-    </div>
-    <div class="module-card" onclick="openFile('dashboard.html')">
-      <div class="module-cover" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-        <div class="module-icon">📄</div>
-      </div>
-      <div class="module-info">
-        <h3 class="module-title">🎁 dashboard.html</h3>
-        <div class="module-stats">
-          <span class="stat">📄 Arquivo</span>
-        </div>
-      </div>
-    </div>
-    <div class="module-card" onclick="openFile('index.html')">
-      <div class="module-cover" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-        <div class="module-icon">📄</div>
-      </div>
-      <div class="module-info">
-        <h3 class="module-title">🎁 index.html</h3>
-        <div class="module-stats">
-          <span class="stat">📄 Arquivo</span>
-        </div>
-      </div>
-    </div>
-    <div class="module-card" onclick="openFile('ofertas')">
-      <div class="module-cover" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-        <div class="module-icon">📄</div>
-      </div>
-      <div class="module-info">
-        <h3 class="module-title">🎁 ofertas</h3>
-        <div class="module-stats">
-          <span class="stat">📄 Arquivo</span>
-        </div>
-      </div>
-    </div>
             </div>
             
             
@@ -1619,8 +1554,8 @@ console.log('✅ Sistema de Validações da Área de Membros carregado com suces
         }
         
         // Dados dos módulos para navegação (incluir ofertas)
-        const moduleData = Object.assign({}, {});
-        const extraData = [{"name":"README.md","path":"README.md","type":"file"},{"name":"arquivos","path":"arquivos","type":"file"},{"name":"clientes.json","path":"clientes.json","type":"file"},{"name":"customers","path":"customers","type":"file"},{"name":"dashboard.html","path":"dashboard.html","type":"file"},{"name":"index.html","path":"index.html","type":"file"},{"name":"ofertas","path":"ofertas","type":"file"}];
+        const moduleData = Object.assign({"UPSELL-2":[{"name":"3.mp4","path":"UPSELL-2/3.mp4","type":"video"},{"name":"4.mp4","path":"UPSELL-2/4.mp4","type":"video"}]}, {});
+        const extraData = [];
         
         function openModule(moduleName) {
             const files = moduleData[moduleName];
