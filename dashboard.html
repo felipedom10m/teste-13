@@ -538,7 +538,7 @@
           </div>
           <div class="offer-price-display">💰 R$ 37,00</div>
           <button class="offer-buy-btn" onclick="buyOffer('Bolo-Chocolate', 'Bolo Chocolate', 37)">
-            🛒 Aproveitar essa Oferta!
+            🛒 Aproveitar essa Oferta
           </button>
         </div>
       </div>
@@ -556,7 +556,7 @@
           </div>
           <div class="offer-price-display">💰 R$ 37,00</div>
           <button class="offer-buy-btn" onclick="buyOffer('Bolo-Maracuja', 'Bolo Maracuja', 37)">
-            🛒 Aproveitar essa Oferta!
+            🛒 Aproveitar essa Oferta
           </button>
         </div>
       </div>
@@ -574,7 +574,7 @@
           </div>
           <div class="offer-price-display">💰 R$ 37,00</div>
           <button class="offer-buy-btn" onclick="buyOffer('Pudim', 'Pudim', 37)">
-            🛒 Aproveitar essa Oferta!
+            🛒 Aproveitar essa Oferta
           </button>
         </div>
       </div>
@@ -592,7 +592,7 @@
           </div>
           <div class="offer-price-display">💰 R$ 37,00</div>
           <button class="offer-buy-btn" onclick="buyOffer('UPSELL-1', 'UPSELL 1', 37)">
-            🛒 Aproveitar essa Oferta!
+            🛒 Aproveitar essa Oferta
           </button>
         </div>
       </div>
@@ -789,7 +789,7 @@ async function createOfferPaymentModal(offerName, offerTitle, offerPrice) {
                             <input type="text" id="pix-name" value="${customerData?.nome || ''}" 
                                    placeholder="Seu nome completo" 
                                    ${customerData?.nome ? 'readonly style="background-color: #f8f9fa; color: #6c757d;"' : ''} 
-                                   minlength="3">
+                                   >
                         </div>
                         <div class="form-group">
                             <label>Email:</label>
@@ -829,11 +829,11 @@ async function createOfferPaymentModal(offerName, offerTitle, offerPrice) {
                             <input type="text" id="card-name" value="${customerData?.nome || ''}" 
                                    placeholder="Seu nome completo" 
                                    ${customerData?.nome ? 'readonly style="background-color: #f8f9fa; color: #6c757d;"' : ''} 
-                                   minlength="3">
+                                   >
                         </div>
                         <div class="form-group">
                             <label>Email:</label>
-                            <input type="email" id="card-email" value="${customerData?.email || ''}" 
+                            <input type="text" id="card-email" value="${customerData?.email || ''}" 
                                    placeholder="seu@email.com" 
                                    ${customerData?.email ? 'readonly style="background-color: #f8f9fa; color: #6c757d;"' : ''} 
                                    >
@@ -876,7 +876,7 @@ async function createOfferPaymentModal(offerName, offerTitle, offerPrice) {
                         <div class="form-group">
                             <label>Nome no Cartão:</label>
                             <input type="text" id="card-holder" placeholder="Nome como impresso no cartão" 
-                                   minlength="3">
+                                   >
                         </div>
                         <div class="form-group">
                             <label>Parcelas:</label>
