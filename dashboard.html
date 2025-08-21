@@ -1139,6 +1139,12 @@ function closeOfferModal() {
  * Processa pagamento com validações completas
  */
 function processOfferPayment(offerName, paymentType, offerPrice = 37.00) {
+    // PREVENIR COMPORTAMENTO PADRÃO DO NAVEGADOR
+    if (event) {
+        event.preventDefault();
+        event.stopPropagation();
+    }
+    
     // Prevenir duplo clique
     const button = event.target || document.querySelector('.offer-buy-btn');
     if (button.disabled) return;
